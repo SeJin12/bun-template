@@ -1,0 +1,30 @@
+{
+  "name": "p1",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run ./src/server.js",
+    "watch": "bun --watch ./src/server.js",
+    "hot": "bun --hot /src/server.js"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "bun-create": {
+    "preinstall": "echo 'Installing...'",
+    "postinstall": ["echo 'Done!'"],
+    "start": "bun run echo 'Hello world!'"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
