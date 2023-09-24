@@ -1,15 +1,22 @@
-# p1
+# bun-template
 
-To install dependencies:
 
-```bash
-bun install
-```
+### 구현
+- router
+- middleware
+    - winston
+    - morgan
+    - error handler
+- views
+- bunfig.toml
+    - preload
+    - define
+- env
 
-To run:
+### 할 일
+- DB
+    - MySQL
+    - Redis
 
-```bash
-bun run index.js
-```
-
-This project was created using `bun init` in bun v1.0.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### 장점
+- 빌드가 빠르다

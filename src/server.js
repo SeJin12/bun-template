@@ -9,7 +9,7 @@ import errorHandler from "./handlers/error-handler";
 global.LOG = (msg) => logger.info(msg);
 
 const app = express();
-const port = Bun.env.serverPort; // bunfig.toml
+const port = Bun.env.serverPort; // .env
 
 // 미들웨어 설정
 app.set('view engine', 'ejs');
